@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap');
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    margin: 30px 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    list-style: none;
+    font-size: 2rem;
+    font-family: 'Anek Latin', sans-serif;
+}

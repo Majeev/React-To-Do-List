@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap');
-
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    heigth: 100vh;
+}
 .container {
     background: white;
     border-radius: 10px;
@@ -28,4 +34,10 @@
 }
 .submitButton, .itemInput {
     font-family: 'Anek Latin', sans-serif;
+}
+
+.itemWrapper{
+    background: white;
+    color: black;
+    width: 40%;
 }

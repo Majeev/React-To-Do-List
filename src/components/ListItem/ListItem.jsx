@@ -1,28 +1,27 @@
 import css from './ListItem.module.css'
 import React, {useState} from "react";
+import Card from "../UI/Card";
 
-const ListItem = () => {
-    const [items, setItems] = useState([])
+const ListItem = (props) => {
+
     const [name, setName] = useState('')
 
     const inputChangeHandler = (e) => {
         setName(e.target.value)
-        console.log(name)
     }
     const addHandler = (e) => {
         e.preventDefault()
-        setItems(prevState => ([...prevState, {item: name}]))
-        console.log(items)
+        props.onAddItem(name)
+        setName('')
     }
     return (
-        <div className={css.container}>
-            <input className={css.itemInput} type='text' placeholder='Enter your task' onChange={inputChangeHandler}/>
-            <input className={css.itemInput} type='date' placeholder='Deadline Date' onChange={inputChangeHandler}/>
+        <Card>
+            <input className={css.itemInput} type='text' placeholder='Enter your task'
+                   onChange={inputChangeHandler} value={name}/>
+            {/*<input className={css.itemInput} type='date' placeholder='Deadline Date' onChange={inputChangeHandler}/>*/}
             <button className={css.submitButton} type='submit' onClick={addHandler}>ADD TASK</button>
-            {items.map(item => (
-                <div>{item.item}</div>
-            ))}
-        </div>
+        </Card>
+
     )
 }
 

@@ -1,10 +1,19 @@
 import './App.css';
 import ListItem from "./components/ListItem/ListItem";
+import Todos from './components/Todos/Todos'
+import React,{useState} from "react";
 
 function App() {
+    const [items, setItems] = useState([])
+
+    const addItemHandler = (itemName) => {
+        setItems(prevState => ([...prevState, {name: itemName, id: Math.random()}]))
+    }
+
   return (
     <div className="App">
-      <ListItem />
+      <ListItem onAddItem={addItemHandler}/>
+        <Todos items={items}/>
     </div>
   );
 }
