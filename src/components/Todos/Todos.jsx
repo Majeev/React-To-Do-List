@@ -3,7 +3,7 @@ import css from './Todos.module.css'
 
 const Todos = (props) => {
     return (
-        <Card>
+        <Card className={props.items.length === 0 && css.todoCard}>
             {/*<div className={css.wrapper}>*/}
                 <ul>
                     {props.items.map(item =>(

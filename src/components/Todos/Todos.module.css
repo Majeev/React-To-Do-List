@@ -3,12 +3,18 @@
 ul{
     padding: 0;
     margin: 0;
+
 }
 li{
+    display: flex;
+    justify-content: space-between;
     margin: 30px 0;
     width: 100%;
     border-bottom: 1px solid black;
     list-style: none;
     font-size: 2rem;
     font-family: 'Anek Latin', sans-serif;
+}
+.todoCard{
+    padding: 0;
 }
