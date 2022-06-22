@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap');
+*{
+    font-family: 'Anek Latin', sans-serif;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -21,7 +25,6 @@
     width: 100%;
     margin: 10px 0;
     font-size: 2rem;
-
 }
 .submitButton{
     border-radius: 10px;
@@ -32,12 +35,25 @@
     width: 40%;
     padding: 8px;
 }
-.submitButton, .itemInput {
-    font-family: 'Anek Latin', sans-serif;
+select {
+    margin: 5px 0 10px 0;
+    font-size: 1.5rem;
+    outline: none;
+}
+option, label{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.low{
+    background: rgba(102, 255, 102,0.5);
+}
+.moderate{
+    background: rgba(255, 255, 102,0.5)
+}
+.high{
+    background: rgba(255, 99, 71,0.5)
 }
 
-.itemWrapper{
-    background: white;
-    color: black;
-    width: 40%;
-}
+
+

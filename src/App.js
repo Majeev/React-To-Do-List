@@ -5,11 +5,13 @@ import React,{useState,useEffect} from "react";
 
 function App() {
     const [items, setItems] = useState([])
+    let id = Math.random();
 
 
+    const addItemHandler = (itemName,option) => {
+        setItems(prevState => ([...prevState, {name: itemName, priority: option, id}]))
+        console.log(items)
 
-    const addItemHandler = (itemName) => {
-        setItems(prevState => ([...prevState, {name: itemName, id: Math.random()}]))
     }
 
   return (
