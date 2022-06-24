@@ -5,6 +5,8 @@ import { faTrash } from '@fortawesome/fontawesome-free-solid'
 
 
 const Todos = (props) => {
+
+
     return (
         <Card className={props.items.length === 0 && css.todoCard}>
 
@@ -13,10 +15,9 @@ const Todos = (props) => {
                     <li className={item.priority === '3' ? css.low
                         : item.priority === '2' ? css.moderate
                             : css.high} key={item.id} >{item.name}
-                        <button><FontAwesomeIcon icon={faTrash}/></button>
+                        <button onClick={props.onClick(item)}><FontAwesomeIcon icon={faTrash}/></button>
                     </li>
-                )).sort(function(a, b) {
-                    return a.priority < b.priority;})}
+                ))}
             </ul>
 
         </Card>

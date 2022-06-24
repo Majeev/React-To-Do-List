@@ -9,7 +9,6 @@ const ListItem = (props) => {
 
     const selectHandler = (e) => {
         setOption(e.target.value)
-        console.log(option)
     }
 
     const inputChangeHandler = (e) => {
