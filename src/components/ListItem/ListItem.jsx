@@ -33,7 +33,10 @@ const ListItem = (props) => {
                 <option className={css.moderate} value='2'>2 - Moderate</option>
                 <option className={css.high} value='1'>1 - High</option>
             </select>
+            <div className={css.wrapper}>
             <button className={css.submitButton} type='submit' onClick={addHandler}>ADD TASK</button>
+            <span>Completed tasks: {props.completedTasks}</span>
+            </div>
         </Card>
 
     )
