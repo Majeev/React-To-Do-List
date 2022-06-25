@@ -8,7 +8,8 @@ function App() {
     let id = Math.random();
 
     useEffect(() => {
-       setItems(items.sort((a, b) => (a.priority > b.priority) ? 1 : -1))
+        const sorted = [...items]
+       setItems(sorted.sort((a, b) => (a.priority > b.priority) ? 1 : -1))
     },[items])
 
 
