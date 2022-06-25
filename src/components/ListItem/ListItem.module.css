@@ -1,54 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap');
-*{
+
+* {
     font-family: 'Anek Latin', sans-serif;
 }
 
 .container {
     background: white;
     border-radius: 10px;
+    box-shadow: inset 0 0 5px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
     width: 40%;
-    box-shadow: inset 0 0 5px black;
 }
+
 .itemInput {
-    width: 100%;
-    margin: 10px 0;
     font-size: 2rem;
+    margin: 10px 0;
+    width: 100%;
 }
-.submitButton{
+
+.submitButton {
+    background: mediumpurple;
     border-radius: 10px;
     border: white;
-    background: mediumpurple;
     color: white;
-    width: 40%;
     padding: 8px;
+    width: 40%;
 }
+
 select {
     margin: 5px 0 10px 0;
     outline: none;
 }
-option, label{
+
+option, label {
     margin: 0;
     padding: 0;
 }
-.low{
-    background: rgba(0, 255, 0,0.5);
-}
-.moderate{
-    background: rgba(230, 230, 25, 0.5);
-}
-.high{
-    background: rgba(255, 99, 71,0.5)
+
+.low {
+    background: rgba(0, 255, 0, 0.5);
 }
 
-.wrapper{
+.moderate {
+    background: rgba(230, 230, 25, 0.5);
+}
+
+.high {
+    background: rgba(255, 99, 71, 0.5)
+}
+
+.wrapper {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
+
 .wrapper span {
     padding-right: 5px;
 }
