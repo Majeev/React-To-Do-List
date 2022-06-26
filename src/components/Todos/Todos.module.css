@@ -52,3 +52,13 @@ button {
 .low, .moderate, .high {
     background: rgba(208, 208, 225, 0.3)
 }
+
+/*========== MEDIA QUERIES ==========*/
+
+@media screen and (max-width: 768px) {
+    li {
+
+        font-size: 1rem;
+        padding: 1rem 10px;
+    }
+}

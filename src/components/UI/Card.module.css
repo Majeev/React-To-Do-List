@@ -1,4 +1,4 @@
-.card{
+.card {
     background: white;
     border-radius: 10px;
     box-shadow: inset 0 0 5px black;
@@ -9,4 +9,12 @@
     margin: 15px;
     padding: 10px;
     width: 40%;
+}
+
+/*========== MEDIA QUERIES ==========*/
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
 }

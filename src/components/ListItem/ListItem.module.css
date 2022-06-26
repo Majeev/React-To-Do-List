@@ -66,4 +66,16 @@ option, label {
     font-size: 1.5rem;
 }
 
+/*========== MEDIA QUERIES ==========*/
+
+@media screen and (max-width: 1024px) {
+    .submitButton {
+        width: 100%;
+    }
+
+    .wrapper span {
+        display: none;
+    }
+
+}
 
