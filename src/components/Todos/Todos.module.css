@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Anek Latin', sans-serif;
+    font-family: var(--font)
 }
 
 ul {

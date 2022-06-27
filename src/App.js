@@ -2,6 +2,7 @@ import './App.css';
 import ListItem from "./components/ListItem/ListItem";
 import Todos from './components/Todos/Todos'
 import React, {useEffect, useState} from "react";
+import Error from "./components/UI/Error";
 
 function App() {
     const [items, setItems] = useState([])
@@ -21,6 +22,7 @@ function App() {
 
     return (
         <div className="App">
+            <Error />
             <ListItem onAddItem={addItemHandler} completedTasks={completedTasks}/>
             <Todos items={items} onClick={removeItemHandler}/>
         </div>
