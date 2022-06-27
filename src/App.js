@@ -22,7 +22,6 @@ function App() {
 
     return (
         <div className="App">
-            <Error />
             <ListItem onAddItem={addItemHandler} completedTasks={completedTasks}/>
             <Todos items={items} onClick={removeItemHandler}/>
         </div>
