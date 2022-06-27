@@ -23,6 +23,8 @@ li {
     margin: 30px 0;
     padding: 0 10px;
     width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .todoCard {
@@ -57,7 +59,7 @@ button {
 
 @media screen and (max-width: 768px) {
     li {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 1rem 10px;
     }
 }

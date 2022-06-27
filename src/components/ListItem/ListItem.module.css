@@ -81,6 +81,8 @@ option, label {
     .wrapper span {
         display: none;
     }
-
+    .itemInput{
+        font-size: 1.5rem;
+    }
 }
 
