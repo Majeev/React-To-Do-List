@@ -19,7 +19,7 @@ const ListItem = (props) => {
     }
     const addHandler = (e) => {
         e.preventDefault()
-        if(task.trim().length === 0){
+        if (task.trim().length === 0) {
             setError(true)
             return;
         }
@@ -42,8 +42,8 @@ const ListItem = (props) => {
                 <option className={css.high} value='1'>1 - High</option>
             </select>
             <div className={css.wrapper}>
-            <button className={css.submitButton} type='submit' onClick={addHandler}>ADD TASK</button>
-            <span>Completed tasks: {props.completedTasks}</span>
+                <button className={css.submitButton} type='submit' onClick={addHandler}>ADD TASK</button>
+                <span>Completed tasks: {props.completedTasks}</span>
             </div>
         </Card>
 

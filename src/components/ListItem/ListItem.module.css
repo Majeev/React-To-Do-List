@@ -27,10 +27,11 @@
     border: white;
     color: white;
     padding: 8px;
-    width: 40%;
     transition: all 0.1s;
+    width: 40%;
 }
-.submitButton:active{
+
+.submitButton:active {
     transform: scale(0.98);
 }
 

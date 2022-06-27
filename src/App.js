@@ -1,8 +1,7 @@
 import './App.css';
 import ListItem from "./components/ListItem/ListItem";
 import Todos from './components/Todos/Todos'
-import React, {useEffect, useState} from "react";
-import Error from "./components/UI/Error";
+import React, {useState} from "react";
 
 function App() {
     const [items, setItems] = useState([])
