@@ -15,7 +15,7 @@ const Todos = (props) => {
                     <li className={item.priority === '3' ? css.low
                         : item.priority === '2' ? css.moderate
                             : css.high} key={item.id} >{item.name}
-                        <button onClick={props.onClick(item)}><FontAwesomeIcon icon={faTrash}/></button>
+                        <button className={css.deleteButton} onClick={props.onClick(item)}><FontAwesomeIcon icon={faTrash}/></button>
                     </li>
                 ))}
             </ul>
