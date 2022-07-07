@@ -4,19 +4,8 @@
     font-family: 'Anek Latin', sans-serif;
 }
 
-.container {
-    background: white;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    width: 40%;
-}
-
 .itemInput {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 10px 0;
     width: 100%;
 }
