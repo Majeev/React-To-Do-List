@@ -1,7 +1,6 @@
 # React To Do List
-To run this project, install it locally using npm:
+To run this project, clone repository and install it locally using npm:
 ```
-$ cd ../lorem
 $ npm install
 $ npm start
 ```
