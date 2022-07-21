@@ -1,4 +1,9 @@
 # React To Do List
+Check it live!
+```
+https://majeev.github.io/React-To-Do-List/
+```
+
 To run this project, clone repository and install it locally using npm:
 ```
 npm install
