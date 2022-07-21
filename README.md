@@ -3,6 +3,7 @@ Check it live!
 ```
 https://majeev.github.io/React-To-Do-List/
 ```
+or
 
 To run this project, clone repository and install it locally using npm:
 ```
